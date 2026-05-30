@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shrutiii87/Mathematics-Advanced-Statistics/main/Analyzing_Income_Distribution_and_household_demographics/ezgif-24d717bf57ed6026.gif" alt="Income Distribution Dashboard Demo" width="800">
-</p>
-
 # 📊 Analyzing Income Distribution & Household Demographics
 A two-part Statistics project combining **Theory (Part A)** with **Hands-on Python Analysis (Part B)** to explore income distribution patterns, household demographics, and key statistical concepts using a real-world dataset of 500 household records.
 
@@ -15,7 +11,11 @@ The goal was to apply core statistical concepts — central tendency, dispersion
 
 ## 🎬 Project Demo
 
-> 📸 *Screenshots of notebook output available in the `Dashboard Preview/` folder*
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shrutiii87/Mathematics-Advanced-Statistics/main/Analyzing_Income_Distribution_and_household_demographics/ezgif-24d717bf57ed6026.gif" alt="Income Distribution Dashboard Demo" width="800">
+</p>
+
+> 📸 short tour of notebook output :-
 
 ---
 
