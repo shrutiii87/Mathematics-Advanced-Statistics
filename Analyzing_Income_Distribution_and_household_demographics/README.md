@@ -1,4 +1,4 @@
-<p align="center">  <img src="https://github.com/shrutiii87/Mathematics-Advanced-Statistics/blob/main/Analyzing_Income_Distribution_and_household_demographics/ezgif-24d717bf57ed6026.gif
+<img src="https://github.com/shrutiii87/Mathematics-AdvancedStatistics/blob/main/Analyzing_Income_Distribution_and_household_demographics/ezgif-24d717bf57ed6026.gif
 " alt="Project Demo" width="800"> </p> 
 
 # 📊 Analyzing Income Distribution & Household Demographics
