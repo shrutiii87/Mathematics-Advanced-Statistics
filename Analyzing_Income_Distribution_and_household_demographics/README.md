@@ -11,9 +11,8 @@ The goal was to apply core statistical concepts — central tendency, dispersion
 
 ## 🎬 Project Demo GIF
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/shrutiii87/Mathematics-Advanced-Statistics/main/Analyzing_Income_Distribution_and_household_demographics/ezgif-24d717bf57ed6026.gif" alt="Income Distribution Dashboard Demo" width="800">
-</p>
+<img width="800" height="450" alt="Descriptive booster GIf" src="https://github.com/user-attachments/assets/a84e3162-8729-4446-a020-cd26fab4adb5" />
+
 
 > 📸 short tour of notebook output :-
 
