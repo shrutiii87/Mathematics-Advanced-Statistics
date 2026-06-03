@@ -50,15 +50,19 @@ A complete **Theory + Practical** Statistics project analyzing a real-world Hous
 | `Urban_Rural` | Categorical | Urban (103 records) / Rural (97 records) |
 
 ---
-
-## 📗 Excel Workbook — Sheet Breakdown
----
 ## 🎬 Project Demo GIF
 
 <img width="800" height="450" alt="Descriptive booster GIf" src="https://github.com/user-attachments/assets/a84e3162-8729-4446-a020-cd26fab4adb5" />
 
-> 📸 short tour of notebook output :-
+> 📸 short tour of Excel output :-
 ---
+## 🎬 Project Demo GIF
+
+<img width="800" height="420" alt="Descriptive_Booster_ipynb GIF" src="https://github.com/user-attachments/assets/7f73ac5c-91e7-477a-b3d6-cdca13c9482c" />
+
+> 📸 short tour of Excel output :-
+---
+## 📗 Excel Workbook — Sheet Breakdown
 
 The Excel file `Household_Dataset_200_Records.xlsx` contains **5 sheets**:
 
