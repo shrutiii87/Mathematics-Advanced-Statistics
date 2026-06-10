@@ -394,6 +394,32 @@ P(Pass|H)=0.8089
 | Overall Pass Rate              | 69.33% |
 | Pass Rate with High Attendance | 80.89% |
 
+```
+# Pass and Fail counts from dataset
+pass_count = len(df[df["final_exam_pass"] == "Pass"])
+fail_count = len(df[df["final_exam_pass"] == "Fail"])
+total_students = len(df)
+
+# Given Information
+P_H_given_P = 0.70      
+P_H = 0.60              
+
+# Probability of Passing from dataset
+P_P = pass_count / total_students
+
+# Bayes Theorem
+P_P_given_H = (P_H_given_P * P_P) / P_H
+
+print("Pass =", pass_count)
+print("Fail =", fail_count)
+print("Total =", total_students)
+
+print("\nP(Pass) =", round(P_P, 4))
+print("P(Pass | High Attendance) =", round(P_P_given_H, 4))
+print("Percentage =", round(P_P_given_H * 100, 2), "%")
+```
+
+
 📌 **Insight:** High attendance increases the probability of passing by more than 11 percentage points.
 
 ---
