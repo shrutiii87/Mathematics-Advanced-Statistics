@@ -1,8 +1,3 @@
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=34&duration=3000&pause=1000&color=6C63FF&center=true&vCenter=true&width=750&lines=🎯+Expectation+Decider;Probability+%7C+Statistics+%7C+Python;Predicting+Student+Success+with+Data" alt="Typing SVG" />
-
-<br/>
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
