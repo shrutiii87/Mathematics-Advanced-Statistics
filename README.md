@@ -68,7 +68,7 @@ Your task is to analyze student performance data and apply probability concepts 
 
 # 📗 Probability Topics Covered
 
-## Q1 — Basic Probability Events
+## 🔢 Q1 — Basic Probability Events
 
 Calculate probabilities of:
 
@@ -107,7 +107,7 @@ print("Probability of Attendance > 75% =", p_attendance)
 
 ---
 
-## Q2 — Empirical vs Theoretical Probability
+## 📋 Q2 — Empirical vs Theoretical Probability
 
 ### Empirical Probability
 
@@ -148,7 +148,7 @@ print("Theoretical Probability of Passing =", theoretical_probability)
 
 ---
 
-## Q3 — Random Variable & Binomial Distribution
+## 🎰 Q3 — Random Variable & Binomial Distribution
 
 ### Random Variable
 
@@ -213,7 +213,7 @@ print("Variance =", round(variance, 4))
 
 ---
 
-## Q4 — Venn Diagram Analysis
+## 🔎 Q4 — Venn Diagram Analysis
 
 ### Set Definitions
 
@@ -263,7 +263,7 @@ plt.show()
 
 ---
 
-## Q5 — Contingency Table & Conditional Probability
+## 📊 Q5 — Contingency Table & Conditional Probability
 
 ### Group Discussion vs Exam Outcome
 
@@ -337,7 +337,7 @@ print("Conditional Probability =", conditional_probability)
 
 ---
 
-## Q6 — Independence & Mutual Exclusivity
+## ⚙️ Q6 — Independence & Mutual Exclusivity
 
 ### Independence Test
 
@@ -363,7 +363,7 @@ Since both values differ:
 
 ---
 
-## Q7 — Bayes' Theorem Application
+## 📊 Q7 — Bayes' Theorem Application
 
 ### Given
 
