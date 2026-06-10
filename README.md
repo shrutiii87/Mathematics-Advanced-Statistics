@@ -84,6 +84,25 @@ Calculate probabilities of:
 | Group Discussion | 0.4689      |
 | Attendance > 75% | 0.5022      |
 
+```python
+total_students = len(df)
+
+# Event 1:  (a student passes)
+
+p_pass = len(df[df["final_exam_pass"] == "Pass"]) / total_students
+print("Probability of Passing =", p_pass)
+
+# Event 2:  (a student participates in group discussion)
+
+p_group = len(df[df["group_discussion"] == "Yes"]) / total_students
+print("Probability of Group Discussion =", p_group)
+
+# Event 3: (a student has attendance greater than 75%)
+
+p_attendance = len(df[df["attendance"] > 75]) / total_students
+print("Probability of Attendance > 75% =", p_attendance)
+```
+
 📌 **Insight:** Nearly 69% of students pass the exam. Attendance remains moderate while classroom participation is relatively low.
 
 ---
@@ -110,6 +129,20 @@ P(Pass)=\frac{1}{2}=0.5000
 | ----------- | ----------- |
 | Empirical   | 0.6933      |
 | Theoretical | 0.5000      |
+
+```python
+total_students = len(df)
+pass_students = len(df[df["final_exam_pass"] == "Pass"])
+
+empirical_probability = pass_students / total_students
+
+print("Empirical Probability of Passing =", empirical_probability)
+```
+```
+theoretical_probability = 1 / 2
+
+print("Theoretical Probability of Passing =", theoretical_probability)
+```
 
 📌 **Insight:** Real-world pass rates exceed theoretical expectations due to factors such as attendance, study effort, and participation.
 
@@ -148,6 +181,34 @@ E(X)=np=2.08
 Var(X)=npq=0.6379
 ]
 
+```python
+# Probability of passing from dataset
+p = len(df[df["final_exam_pass"] == "Pass"]) / len(df
+
+print("Probability of Passing (p) =", round(p, 4))
+```
+```
+from scipy.stats import binom
+p = len(df[df["final_exam_pass"] == "Pass"]) / len(df)
+
+n = 3
+
+distribution = pd.DataFrame({
+    "X (Number of Passes)": [0, 1, 2, 3],
+    "P(X)": [binom.pmf(x, n, p) for x in range(4)]
+})
+
+print(distribution)
+```
+```
+mean = n * p
+variance = n * p * (1 - p)
+
+print("Mean =", round(mean, 4))
+print("Variance =", round(variance, 4))
+```
+
+
 📌 **Insight:** The most likely outcome is exactly 2 students passing.
 
 ---
@@ -176,6 +237,27 @@ Var(X)=npq=0.6379
 | P(B)        | 0.4000 |
 | P(A ∩ B)    | 0.3111 |
 | P(A ∪ B)    | 0.8444 |
+
+```
+# Set A: (study more than 10 hours/week)
+A = set(df[df["study_hours"] > 10].index)
+
+# Set B: (attend more than 80% classes)
+B = set(df[df["attendance"] > 80].index)
+
+#Venn Diagram
+plt.figure(figsize=(6, 6))
+venn2(
+    [A, B],
+    set_labels=(
+        "Study Hours > 10",
+        "Attendance > 80%"
+    )
+)
+
+plt.title("Venn Diagram of Student Groups")
+plt.show()
+```
 
 📌 **Insight:** Students with both strong attendance and study habits form the highest-performing group.
 
@@ -209,6 +291,47 @@ P(Pass)=0.6933
 [
 P(Pass|Discussion)=0.7441
 ]
+
+```
+contingency_table = pd.crosstab(
+    df["group_discussion"],
+    df["final_exam_pass"]
+)
+
+print(contingency_table)
+```
+```
+joint_count = len(df[
+    (df["group_discussion"] == "Yes") &
+    (df["final_exam_pass"] == "Pass")
+])
+
+joint_probability = joint_count / len(df)
+
+print("Joint Probability =", joint_probability)
+```
+```
+pass_count = len(
+    df[df["final_exam_pass"] == "Pass"]
+)
+
+marginal_probability = pass_count / len(df)
+
+print("Marginal Probability =", marginal_probability)
+```
+```
+discussion_count = len(
+    df[df["group_discussion"] == "Yes"]
+)
+
+conditional_probability = (
+    joint_count / discussion_count
+)
+
+print("Conditional Probability =", conditional_probability)
+```
+
+
 
 📌 **Insight:** Students participating in group discussions show significantly higher pass rates.
 
