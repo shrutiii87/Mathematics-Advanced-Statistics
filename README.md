@@ -394,7 +394,7 @@ P(Pass|H)=0.8089
 | Overall Pass Rate              | 69.33% |
 | Pass Rate with High Attendance | 80.89% |
 
-```
+```python
 # Pass and Fail counts from dataset
 pass_count = len(df[df["final_exam_pass"] == "Pass"])
 fail_count = len(df[df["final_exam_pass"] == "Fail"])
