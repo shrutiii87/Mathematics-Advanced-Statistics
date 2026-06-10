@@ -215,6 +215,8 @@ print("Variance =", round(variance, 4))
 
 ## 🔎 Q4 — Venn Diagram Analysis
 
+<img width="484" height="453" alt="output" src="https://github.com/user-attachments/assets/882ec6a3-6c17-4359-ac05-f77417fbe441" />
+
 ### Set Definitions
 
 * A = Students with Study Hours > 10
