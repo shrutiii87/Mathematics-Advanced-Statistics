@@ -138,7 +138,7 @@ empirical_probability = pass_students / total_students
 
 print("Empirical Probability of Passing =", empirical_probability)
 ```
-```
+```python
 theoretical_probability = 1 / 2
 
 print("Theoretical Probability of Passing =", theoretical_probability)
@@ -187,7 +187,7 @@ p = len(df[df["final_exam_pass"] == "Pass"]) / len(df
 
 print("Probability of Passing (p) =", round(p, 4))
 ```
-```
+```python
 from scipy.stats import binom
 p = len(df[df["final_exam_pass"] == "Pass"]) / len(df)
 
@@ -200,7 +200,7 @@ distribution = pd.DataFrame({
 
 print(distribution)
 ```
-```
+```python
 mean = n * p
 variance = n * p * (1 - p)
 
@@ -238,7 +238,7 @@ print("Variance =", round(variance, 4))
 | P(A ∩ B)    | 0.3111 |
 | P(A ∪ B)    | 0.8444 |
 
-```
+```python
 # Set A: (study more than 10 hours/week)
 A = set(df[df["study_hours"] > 10].index)
 
@@ -292,7 +292,7 @@ P(Pass)=0.6933
 P(Pass|Discussion)=0.7441
 ]
 
-```
+```python
 contingency_table = pd.crosstab(
     df["group_discussion"],
     df["final_exam_pass"]
@@ -300,7 +300,7 @@ contingency_table = pd.crosstab(
 
 print(contingency_table)
 ```
-```
+```python
 joint_count = len(df[
     (df["group_discussion"] == "Yes") &
     (df["final_exam_pass"] == "Pass")
@@ -310,7 +310,7 @@ joint_probability = joint_count / len(df)
 
 print("Joint Probability =", joint_probability)
 ```
-```
+```python
 pass_count = len(
     df[df["final_exam_pass"] == "Pass"]
 )
@@ -319,7 +319,7 @@ marginal_probability = pass_count / len(df)
 
 print("Marginal Probability =", marginal_probability)
 ```
-```
+```python
 discussion_count = len(
     df[df["group_discussion"] == "Yes"]
 )
